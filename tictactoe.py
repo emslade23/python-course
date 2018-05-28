@@ -65,6 +65,10 @@ def full_board_check(board):
 
 def player_choice(board):
     position = 0
+    if full_board_check(board):
+            print("It's a tie!")
+            position = 500
+            return position
     while position not in [1,2,3,4,5,6,7,8,9] or not space_check(board, position):
         position = int(raw_input('Choose your next position: (1-9) ')) 
        # print(full_board_check(board))
