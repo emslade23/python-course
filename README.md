@@ -1,2 +1,2 @@
 # python-course
-Programs from online python course
+Programs and notes from online python course
